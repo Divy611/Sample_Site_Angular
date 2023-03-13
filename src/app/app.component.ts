@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,OnInit,Input,Output,EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 import { AboutusComponent } from './aboutus/aboutus.component';
 
@@ -9,5 +9,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 })
 export class AppComponent {
   title = 'SkillCharge';
-  constructor(private router:Router){}
+  constructor(private router:Router){
+    
+  }
 }

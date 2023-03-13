@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { Router, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
@@ -13,11 +14,17 @@ import { HomeComponent } from './home/home.component';
     AboutusComponent,
     ContactusComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot([
+      {path:'',component:HomeComponent},
+      {path:'',component:FooterComponent},
+      {path:'aboutus',component:AboutusComponent},
+      {path:'contactus',component:ContactusComponent},
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent,AboutusComponent]
