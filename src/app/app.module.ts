@@ -24,6 +24,7 @@ import { HomeComponent } from './home/home.component';
       {path:'',component:FooterComponent},
       {path:'aboutus',component:AboutusComponent},
       {path:'contactus',component:ContactusComponent},
+      {path:'footer',component:FooterComponent},
     ]),
   ],
   providers: [],
