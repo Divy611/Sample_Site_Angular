@@ -8,7 +8,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'SkillCharge';
+  title = 'Title';
   constructor(private router:Router){
     
   }
